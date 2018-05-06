@@ -12,12 +12,6 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 
-import ar.edu.unlam.tallerweb1.probando.modelo.Empleado;
-import ar.edu.unlam.tallerweb1.probando.modelo.Empresa;
-import ar.edu.unlam.tallerweb1.probando.modelo.Sector;
-
-
-
 public class testeoGeneral extends SpringTest{
 
 	@Test
