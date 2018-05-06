@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${mensaje1};
-	${mensaje2};
-	
+	El resultado de sumar ${valor1} y ${valor2} da ${valor1+valor2}
 </body>
 </html>
