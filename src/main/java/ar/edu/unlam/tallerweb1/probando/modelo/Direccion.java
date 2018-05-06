@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -14,10 +15,10 @@ public class Direccion{
 	private Long id;
 	private String calle;
 	private String numero;
-//	
-//	@ManyToOne()
-//	private Barrio barrio;
-//	
+	
+    @ManyToOne
+    private Barrio barrio;
+
 	
 	public Long getId() {
 		return id;
@@ -37,15 +38,12 @@ public class Direccion{
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-//	public Barrio getBarrio() {
-//		return barrio;
-//	}
-//	public void setBarrio(Barrio barrio) {
-//		this.barrio = barrio;
-//	}
-//
-//	
-	
+	public Barrio getBarrio() {
+		return barrio;
+	}
+	public void setBarrio(Barrio barrio) {
+		this.barrio = barrio;
+	}
 
 	
 }
